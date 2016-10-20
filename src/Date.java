@@ -27,24 +27,39 @@ public class Date {
         System.out.println("\nExercise 2.3");
         System.out.print("Time.java\n");
 
-        int hour, minute, second;
+        int hour, minute, second, from;
+        hour = 14;
+        minute = 5;
+        second = 55;
+        from = 43315;
+
         Double overall;
         Double passed;
-        hour = 12;
-        minute = 1;
-        second = 55;
-        System.out.println(24*60*60);
-        overall = 86400.00;
-        passed = 43315.00;
+        Double remaining;
+        overall = 24.00*60.00*60.00;
+        remaining = overall - (hour*60*60 + minute*60 + second);
+        passed = hour*60.00*60.00 + minute*60.00 + second;
+
         System.out.print("It has been: ");
         System.out.print(hour*60*60 + minute*60 + second);
         System.out.println(" seconds since midnight");
         System.out.print("There are: ");
-        System.out.print(overall-passed);
+        System.out.print(remaining);
         System.out.println(" seconds left till the end of the day");
 
 
-        System.out.print(100*passed/overall);
-        System.out.print("% of the day has passed");
+        System.out.print(100* passed / overall);
+        System.out.println("% of the day has passed");
+
+        System.out.print("I have been working on this stuff for: ");
+        System.out.print(passed-from);
+        System.out.println(" seconds now. ");
+        System.out.print("That is: ");
+        System.out.print(passed/60-from/60);
+        System.out.print(" minutes. ");
+
+
+
+
     }
 }
