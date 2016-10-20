@@ -29,12 +29,16 @@ public class Inputandoutput {
 
         System.out.println("\n\tConverter");
 
-        Double inch;
+        int inch, mm;
         Double cm;
         System.out.print("Palju Teil sadas lund eile (Tollides)?");
-        inch = in.nextDouble();
+        inch = in.nextInt();
         final double CM_PER_INCH = 2.54;
+        final double IN_PER_FOOT = 100;
         cm = inch * CM_PER_INCH;
+        mm = (int) (cm * IN_PER_FOOT);
+        System.out.printf("%.2f mm", cm, mm);
+
         System.out.print("See teeb siis: ");
         System.out.printf("%.2f", cm);
         System.out.print(" sentimeetrit.");

@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Converts centimeters to feet and inches.
  */
 
-public class Convert {
+public class converter {
     public static void main(String[] args) {
         double cm;
         int feet, inches, remainder;
