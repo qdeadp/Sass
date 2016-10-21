@@ -17,15 +17,17 @@ public class kodutöö3 {
 
         //aja kalkulaator
         int s;
-        int tundesekundites, minuteidtunnis;
+        int tundesekundites, minuteidtunnis, allesminuteid, allessekundeid, sekundid;
 
         //küsib palju sekundeid
         System.out.println("Mitu sekundit?");
         s = in.nextInt();
         //kuvab
         tundesekundites = s / 3600;
-        minuteidtunnis =;
-        System.out.printf("%d sekundeid on %d tund %d minuteid", s, tundesekundites, minuteidtunnis);
+        minuteidtunnis = s % 3600;
+        allesminuteid = minuteidtunnis / 60;
+        sekundid = minuteidtunnis % 60;
+        System.out.printf("%d sekundeid on %d tund %d minuteid ja %d sekundeid", s, tundesekundites, allesminuteid, sekundid);
 
 
     }
