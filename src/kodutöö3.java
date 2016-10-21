@@ -13,9 +13,26 @@ public class kodutöö3 {
         celcius = in.nextDouble();
         Farenheit = celcius * 9 / 5 + 32;
 
-        System.out.printf("%.2f C = %.1f F", celcius, Farenheit);
+        System.out.printf("%.2f C = %.1f F\n", celcius, Farenheit);
+
+        //aja kalkulaator
+        int s;
+        int tundesekundites, minuteidtunnis;
+
+        //küsib palju sekundeid
+        System.out.println("Mitu sekundit?");
+        s = in.nextInt();
+        //kuvab
+        tundesekundites = s / 3600;
+        minuteidtunnis =;
+        System.out.printf("%d sekundeid on %d tund %d minuteid", s, tundesekundites, minuteidtunnis);
 
 
     }
 
-}
+
+
+
+    }
+
+
